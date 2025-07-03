@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mooncoin - Official Token Landing Page</title>
+  <meta name="description" content="Official landing page for Mooncoin, a BSC token.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Mooncoin Logo" class="logo" onerror="this.style.display='none'">
+    <h1>Mooncoin</h1>
+    <p class="desc">
+      Welcome to the official landing page for <b>Mooncoin</b>!<br>
+      <span id="about">A new community-driven token on Binance Smart Chain.<br>
+      <small>(Update this text with your own description if you wish)</small></span>
+    </p>
+    <div class="token-info">
+      <div>
+        <span class="label">Contract Address:</span>
+        <span class="address" id="contractAddress">
+          0x323fF5Da6d15458A343b78E1A242B3E626492eDA
+        </span>
+        <button onclick="copyAddress()">Copy</button>
+      </div>
+      <div>
+        <a href="https://bscscan.com/token/0x323fF5Da6d15458A343b78E1A242B3E626492eDA" target="_blank">
+          View on BSCScan
+        </a>
+      </div>
+    </div>
+    <div class="contact">
+      <span>Contact: <a href="mailto:tokenfuture@outlook.com">tokenfuture@outlook.com</a></span>
+    </div>
+    <div class="socials">
+      <!-- Add your real links here -->
+      <a href="#" target="_blank" rel="noopener">Telegram</a>
+      <a href="#" target="_blank" rel="noopener">Twitter</a>
+      <a href="#" target="_blank" rel="noopener">Discord</a>
+      <!-- Remove or add more as needed -->
+    </div>
+    <footer>
+      &copy; 2025 Mooncoin. All rights reserved.
+    </footer>
+  </div>
+  <script>
+    function copyAddress() {
+      const address = document.getElementById('contractAddress').innerText.trim();
+      navigator.clipboard.writeText(address).then(function() {
+        alert('Contract address copied!');
+      });
+    }
+  </script>
+</body>
+</html>
